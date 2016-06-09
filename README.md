@@ -6,9 +6,9 @@
 
 2. **Qlearning Implementation Details** - 
 Formulas used:
-(1) newQvalue: Qnew(S, a) = (1- α) * Qold(S, a) + α * [ R(S, a, S') + γ * maxa f(S', a)]
-(2) Fvalue: f(S, a) = Q(S, a) + L(S, a)
-(3) Lvalue: L(S', a) = C / N
+i) newQvalue: Qnew(S, a) = (1- α) * Qold(S, a) + α * [ R(S, a, S') + γ * maxa f(S', a)]
+ii) Fvalue: f(S, a) = Q(S, a) + L(S, a)
+iii) Lvalue: L(S', a) = C / N
 
 (We need to include Fvalue while updating Qvalues because we want to make sure that not only the current state fully explores its neighbors, but also its neighbors fully explore their neighbors.)
 
